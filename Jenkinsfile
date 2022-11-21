@@ -24,7 +24,7 @@ node{
 '''
    }*/
    stage('Deploy to Tomcat'){
-     bat "copy target\\App.jar\"${tomcatWeb}\\App.jar\""
+     bat "copy target\\IDBI.jar\"${tomcatWeb}\\IDBI.jar\""
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
