@@ -24,7 +24,7 @@ node{
 '''
    }*/
    stage('Deploy to Tomcat'){
-     bat "copy C:\\Users\\VINOD KUMAR\\.jenkins\\workspace\\IDBI\\target\\IDBI-1\"${tomcatWeb}\\IDBI-1\""
+     bat "copy C:\\Users\\VINOD KUMAR\\.jenkins\\workspace\\IDBI\\target\\IDBI-1\" ${tomcatWeb}\\IDBI-1\""
    }
       stage ('Start Tomcat Server') {
          sleep(time:5,unit:"SECONDS") 
