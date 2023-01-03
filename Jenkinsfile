@@ -14,5 +14,10 @@ pipeline {
          bat "mvn clean package"
         }
      }
+      stage ("Copy") {
+         steps {
+            bat "target\\IDBI-1.jar D:\\apache-tomcat-9.0.65\\webapps"
+         }
+      }
    }
 }
